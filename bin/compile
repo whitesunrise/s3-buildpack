@@ -1,0 +1,2 @@
+#!/bin/sh
+echo "$CLOUDFRONT_KEY_FILE" > cloudfront_private_key.pem
