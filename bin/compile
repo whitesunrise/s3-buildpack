@@ -1,5 +1,9 @@
 #!/usr/bin/env bash
 
+build_dir=$1
+cache_dir=$2
+env_dir=$3
+
 export_env_dir() {
   env_dir=$1
   whitelist_regex=${2:-''}
@@ -12,5 +16,9 @@ export_env_dir() {
     done
   fi
 }
+
 export_env_dir $env_dir
-echo "${CLOUDFRONT_KEY_FILE}" > $1/cloudfront_private_key.pem
+
+echo "$CLOUDFRONT_KEY_FILE" > $1/cloudfront_private_key.pem
+echo $CLOUDFRONT_KEY_FILE > $1/cloudfront_private_key2.pem
+echo ${CLOUDFRONT_KEY_FILE} > $1/cloudfront_private_key3.pem
