@@ -1,2 +1,2 @@
-#!/bin/sh
-echo "$CLOUDFRONT_KEY_FILE" > cloudfront_private_key.pem
+#!/usr/bin/env bash
+echo "$CLOUDFRONT_KEY_FILE" > $1/cloudfront_private_key.pem

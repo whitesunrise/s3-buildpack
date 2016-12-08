@@ -1,3 +1,3 @@
-#!/bin/sh
-
-echo "Go"
+#!/usr/bin/env bash
+echo "Cloudfront Buildpack"
+exit 0
