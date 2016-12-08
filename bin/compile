@@ -13,6 +13,4 @@ export_env_dir() {
   fi
 }
 export_env_dir $env_dir
-if [ -z "\$CLOUDFRONT_KEY_FILE" ]; then
-  echo "$CLOUDFRONT_KEY_FILE" > $1/cloudfront_private_key.pem
-fi
+echo "${CLOUDFRONT_KEY_FILE}" > $1/cloudfront_private_key.pem
