@@ -19,4 +19,4 @@ export_env_dir() {
 
 export_env_dir $env_dir
 
-echo "$CLOUDFRONT_KEY_FILE" > $1/cloudfront_private_key.pem
+echo -e "$CLOUDFRONT_KEY_FILE" > $1/cloudfront_private_key.pem
