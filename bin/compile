@@ -20,5 +20,4 @@ export_env_dir() {
 export_env_dir $env_dir
 
 echo -e "$CLOUDFRONT_KEY_FILE" > $1/cloudfront_private_key.pem
-mkdir $1/storage/app/temp_church_galleries
-sudo chown www-data:www-data $1/storage/app/temp_church_galleries
+mkdir -p $1/storage/app/temp_church_galleries
